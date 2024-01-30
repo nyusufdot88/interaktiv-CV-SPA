@@ -26,7 +26,8 @@ function App() {
             utb_tittle="./src/assets/Skills_logo.png"
             utb_name="Frontend Devloper"
             betyg="Yrkshögskolan"
-            betyg_disc="2yrs eftergymmnasiet utbildnig"
+            betyg_disc="2 years Colleoge Education"
+            img="./src/assets/fard_pic.png"
               />}/>
         {/* <Route path='/' element = 
           {<Erfarenheter/>}/>       */}
