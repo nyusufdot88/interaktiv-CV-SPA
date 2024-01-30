@@ -1,0 +1,15 @@
+.Fardigheter__container{
+    margin-top: -520px;
+    margin-left: 255px;
+    width: 990px;
+    height: 525px;
+    background-color: #134070;
+    border-radius: 30px;   
+}
+
+.fardigheter_utb{
+    margin-left: 120px;
+    width: 200px;
+    box-shadow: 3px 3px #76e3f4;
+    
+}
