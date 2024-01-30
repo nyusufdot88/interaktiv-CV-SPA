@@ -1,7 +1,7 @@
 import Sidebar from './components/Sidebar.jsx'
 import Content from './components/Content.jsx'
 import Fardigheter from './components/Fardigheter.jsx'
-// import Erfarenheter from './components/Erfarenheter.jsx'
+import Erfarenheter from './components/Erfarenheter.jsx'
 // import Project from './components/Project.jsx'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
@@ -29,8 +29,10 @@ function App() {
             betyg_disc="2 years Colleoge Education"
             img="./src/assets/fard_pic.png"
               />}/>
-        {/* <Route path='/' element = 
-          {<Erfarenheter/>}/>       */}
+        <Route path='/Erfarenheter' element = 
+          {<Erfarenheter
+            tittle="./src/assets/erfarenhet_logo.png"
+          />}/>      
       </Routes>
     </Router>
   );

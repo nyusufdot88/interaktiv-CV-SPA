@@ -14,12 +14,12 @@ function Sidebar() {
         <span>Frontend Devloper Student @ KYH</span>
         <br />
         <nav className='navbar__Sidebar__btn'>
-        {/* <Link to="/" className="navLink">Home </Link> */}
-        <Link to="/" className="Fardigheter">
+            <Link to="/" className="Fardigheter">
             <input type="button" value={"Om mig"} /></Link>
             <Link to="/Fardigheter" className="Fardigheter"> 
             <input type="button" value={"Fardigheter"}/></Link>
-            <input type="button" value={"Erfarenheter"}/>
+            <Link to="/Erfarenheter" className="Erfarenheter">
+            <input type="button" value={"Erfarenheter"}/></Link>
             <input type="button" value={"Projects"}/>
         </nav>
 </div>

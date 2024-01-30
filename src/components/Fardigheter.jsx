@@ -1,5 +1,5 @@
 import React from 'react'
-import './fardigheter.css'
+import '/src/fardigheter.css'
 function Fardigheter(probs) {
   return (
     <div>

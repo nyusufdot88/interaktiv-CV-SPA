@@ -1,0 +1,15 @@
+.erfarenheter__container{
+    margin-top: -520px;
+    margin-left: 255px;
+    width: 990px;
+    height: 525px;
+    background-color: #134070;
+    border-radius: 30px;   
+}
+
+.erfarenheter_item1{
+    margin-left: 120px;
+    width: 450px;
+    box-shadow: 3px 3px #76e3f4;
+    
+}
