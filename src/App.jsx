@@ -19,7 +19,7 @@ function App() {
             intresse="Coding and Sport"
             Sprak="Svenska & English"
             img="./src/assets/ny.png"
-            about="I am currently a student of frontend developer, But i have always had a great interest for technology. I have 10 years experience in healthcare through my job. "
+            about="I am currently a student of frontend developer, I have always had a great interest for technology through all my life. Beside that, I have 10 years work experience in healthcare departpent. "
           />}/>
         <Route path="/Fardigheter" element=
           {<Fardigheter 
@@ -31,7 +31,10 @@ function App() {
               />}/>
         <Route path='/Erfarenheter' element = 
           {<Erfarenheter
-            tittle="./src/assets/erfarenhet_logo.png"
+            logo="./src/assets/erfarenhet_logo.png"
+            tittle="Front-End Student since 2023"
+            discription="Areas I have worked untill now... "
+            subjects="Since I am still student in my sencond semister i am familiar with these subject  HTML,CSS/SASS Vanila js in area of Front-End"
           />}/>      
       </Routes>
     </Router>

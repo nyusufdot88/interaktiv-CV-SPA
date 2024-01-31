@@ -4,12 +4,12 @@ function Erfarenheter(probs) {
   return (
     <div>
         <div className='erfarenheter__container'>
-            <img src= {probs.tittle} width={"380px"} />
-               {/* <div className='erfarenheter_item1'> 
-                <h3>{probs.utb_name} </h3>
-                <p>{probs.betyg} </p>
-                <p>{probs.betyg_disc} </p>
-                </div> */}
+            <img src= {probs.logo} width={"380px"} />
+               <div className='erfarenheter_item1'> 
+                <h3>{probs.tittle}</h3>
+                <small>{probs.discription} </small>
+                <p>{probs.subjects} </p>
+                </div>
             </div>
     </div>
   )
