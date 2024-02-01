@@ -1,6 +1,6 @@
-export default  [
+ export default  [
     {
-        id :1,
+        id:1,
         subject:"HTML",
         project_name:{item1:"SVTplay CLONE",
                       item2:"Netflex Clone",
@@ -8,7 +8,7 @@ export default  [
         discription:"AAAAAAAAAAAAAAAAAAAA"              
     },
     {
-           id :2,
+           id:2,
            subject:"CSS / SASS",
            project_name:{item1:"InterActivt CV ",
                          item2:"Memory Game",
@@ -16,7 +16,7 @@ export default  [
            discription:"BBBBBBBBBBBBBBBBBBBB" 
      },
     {
-        id :3,
+        id:3,
         subject: "Vanila JS / React",
         project_name:{item1:"InterActivt CV",
                       item2:"Memory Game",
@@ -24,4 +24,4 @@ export default  [
         discription:"CCCCCCCCCCCCCCCCCCCC"  
     },
     
-]
+] 

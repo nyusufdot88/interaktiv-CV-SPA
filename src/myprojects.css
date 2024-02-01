@@ -1,0 +1,44 @@
+/* .myProject__container{
+    margin-top: -540px;
+    margin-left: 255px;
+    width: 990px;
+    height: 525px;
+    background-color: #134070;
+    border-radius: 30px;   
+}
+
+.myproject__item{
+    margin-top: -540px;
+    margin-left: 120px;
+    width: 450px;
+    box-shadow: 3px 3px #76e3f4;
+    
+} */
+.myProject__container {
+    margin-top: -525px; 
+    margin-left: 255px; 
+    width: calc(100% - 40px); 
+    max-width: 990px;
+    height: 525px;
+    background-color: #134070;
+    border-radius: 30px;
+    padding: 20px; 
+    
+  }
+  
+  .myproject__item {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    flex-direction:column-reverse;
+    margin-top: -30px;
+    margin-left: 300px;
+    width: calc(60% - 40px);
+    /* box-shadow: 3px 3px #76e3f4;
+    padding: 10px;  */
+  }
+  
+  .myprojects__name{
+    box-shadow: 3px 3px 3px 3px #76e3f4;
+    padding: 10px; 
+  }
