@@ -1,4 +1,8 @@
-# React + Vite
+# React + Vit
+En Skol projekt om en interaktiv Single Page Application (SPA) som fungerar som ett
+CV eller en personlig hemsida
+den gjorde Javascrip react bibliotek. den besår av nformation som om dig, mina färdigheter, erfarenheter, projekter.
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
