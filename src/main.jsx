@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import CvApp from './CvApp.jsx'
+import App from './App.jsx'
 import './index.css'
-
+import store from '/src/darkmode/store.js'
+import { Provider } from 'react-redux'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CvApp />
+    <Provider store={store}>
+    <App />
+    </Provider>
   </React.StrictMode>,
 )

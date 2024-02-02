@@ -1,45 +1,11 @@
-// import React from 'react'
-// import { Link } from "react-router-dom";
-// import "/src/sidebar.css"
-// import profilePicNY from "/src/assets/profilePicNY.jpg"
-
-// function Sidebar() {
-//   return (
-    
-// <div className='Sidebar__container'>
-//         <div className='sidebar__circel__img' >
-//           <img src={profilePicNY} alt="profile picture" />
-//         </div>
-//         <span>Nuur Yusuf</span>
-//         <span>Frontend Devloper Student @ KYH</span>
-//         <br />
-//         <nav className='navbar__Sidebar__btn'>
-          
-//             <Link to="/" className="Om mig">
-//             <input type="button" value={"Om mig"} />
-//             </Link>
-
-//             <Link to="/Fardigheter" className="Fardigheter"> 
-//             <input type="button" value={"Fardigheter"}/>
-//             </Link>
-
-//             <Link to="/Erfarenheter" className="Erfarenheter">
-//             <input type="button" value={"Erfarenheter"}/>
-//             </Link>
-
-//             <Link to="/Myprojects" className="Myprojects">
-//             <input type="button" value={"Myprojects"}/>
-//             </Link>
-//         </nav>
-// </div>
-
-// )
-// }
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "/src/sidebar.css"
 import profilePicNY from '/src/assets/profilePicNY.jpg';
+import facebook from '/src/assets/facebook.png';
+import linkedin from '/src/assets/linkedin.png';
+import instagram from '/src/assets/instagram.png';
+import {useDispatch,useSelector } from 'react-redux';
 
 function Sidebar() {
   //state variable to track clicked status for each button
@@ -49,18 +15,25 @@ function Sidebar() {
   const handleClick = (buttonName) => {
     setClickedButton(buttonName);
   };
+  // Dark mode button
+  const dispatch = useDispatch();
+  const darkMode = useSelector(state => state.theme.darkMode);
 
-  return (
-    <div className='Sidebar__container'>
-      <div className='sidebar__circel__img'>
-        <img src={profilePicNY} alt="profile picture" />
-      </div>
+  const toggleThemeHandler = () => {
+    dispatch({type: 'TOGGLE_THEME'});
+  };
+  
+return (
+    <div className={`Sidebar__container ${darkMode ? 'Sidebar__container--dark' : ''}`}  >
+        <div className='sidebar__circel__img'>
+          <img src={profilePicNY} alt="profile picture" />
+        </div>
       <span>Nuur Yusuf</span>
       <span>Frontend Devloper Student @ KYH</span>
       <br />
       <nav className='navbar__Sidebar__btn'>
         <Link to="/" style={{ backgroundColor: clickedButton === 'OmMig' ? 'red' : '' }}>
-          <input type="button" value={"Om mig"} onClick={() => handleClick('OmMig')} />
+          <input type="button" value={"Om Mig"} onClick={() => handleClick('OmMig')} />
         </Link>
         <Link to="/Fardigheter" style={{ backgroundColor: clickedButton === 'Fardigheter' ? 'red' : '' }}>
           <input type="button" value={"Fardigheter"} onClick={() => handleClick('Fardigheter')} />
@@ -71,7 +44,18 @@ function Sidebar() {
         <Link to="/Myprojects" style={{ backgroundColor: clickedButton === 'Myprojects' ? 'red' : '' }}>
           <input type="button" value={"Myprojects"} onClick={() => handleClick('Myprojects')} />
         </Link>
-      </nav>
+      </nav><br />
+      
+      <button onClick={toggleThemeHandler}>
+        {darkMode ? 'swith to Light Mode':'swith to Dark Mode'}
+      </button>
+
+      <p>Let's talk @...</p>
+      <span>
+      <a href="https://www.facebook.com/Nuurkeey"><img src={facebook} alt="profile picture"width={"30px"} /></a>
+      <a href="https://www.linkedin.com/in/nuur-yusuf-8905a92aa/"> <img src={instagram} alt="profile picture"width={"30px"} /></a>
+      <a href="https://www.instagram.com/en_why8/?next=%2F"><img src={linkedin} alt="profile picture"width={"30px"} /></a>
+      </span>
     </div>
   );
 }

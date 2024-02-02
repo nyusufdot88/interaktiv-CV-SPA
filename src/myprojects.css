@@ -20,7 +20,6 @@
     width: calc(100% - 40px); 
     max-width: 990px;
     height: 525px;
-    background-color: #134070;
     border-radius: 30px;
     padding: 20px; 
     
@@ -30,15 +29,18 @@
     display: flex; 
     flex-wrap: wrap; 
     gap: 20px; 
-    flex-direction:column-reverse;
+    flex-direction:column;
     margin-top: -30px;
-    margin-left: 300px;
+    margin-left: 200px;
     width: calc(60% - 40px);
-    /* box-shadow: 3px 3px #76e3f4;
-    padding: 10px;  */
+    padding: 10px; 
   }
   
   .myprojects__name{
     box-shadow: 3px 3px 3px 3px #76e3f4;
     padding: 10px; 
+  }
+
+  .myProject__container--dark{
+    background-color: black;
   }

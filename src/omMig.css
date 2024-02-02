@@ -1,0 +1,28 @@
+.omMig__container{
+    margin-top: -525px;
+    margin-left: 255px;
+    width: 990px;
+    height: 525px;
+    padding: 20px;
+    border-radius: 30px;   
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2px; 
+    flex-direction: column;
+}
+.omMig__my__name{
+    display: block;
+    margin-left: 150px;
+}
+.omMig__about{
+    margin-left: 150px;
+    width: 300px;
+    height: 150px;
+    box-shadow: 3px 3px #76e3f4;
+}
+.omMig__img{
+margin-top: 65px; 
+}
+.omMig__container--dark{
+    background-color: black;
+}

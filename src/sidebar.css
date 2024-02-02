@@ -6,7 +6,6 @@
     width: 250px;
     height: 525px;
     padding: 10px;
-    background-color: #134070;
     border-radius: 30px;
     font-size: .9rem;
     
@@ -42,6 +41,13 @@ input:hover{
     background-color: #9fbfe1;
     color:black;
     cursor: pointer;
-    
+}
 
+.Sidebar__container--dark{
+    background-color: black;
+}
+button{
+    background-color:#134070 ;
+    color: white ;
+    border: none;
 }
